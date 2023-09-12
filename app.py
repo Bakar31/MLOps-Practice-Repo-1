@@ -10,6 +10,6 @@ def predict(prompt):
 with gr.Blocks() as demo:
     textbox = gr.Textbox(placeholder="Enter text block to summarize", lines=4)
 
-output = gr.Interface(fn=predict, inputs=textbox, outputs="text", title="Text Summarizartion Demo with MLOps Techniques",)
+output = gr.Interface(fn=predict, inputs=textbox, outputs="text", title="News Summarizartion Demo with MLOps Techniques",)
 
 output.launch()
