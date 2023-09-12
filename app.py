@@ -1,7 +1,7 @@
 from transformers import pipeline
 import gradio as gr
 
-model = pipeline("summarization")
+model = pipeline("summarization", model = 'google/pegasus-cnn_dailymail')
 
 def predict(prompt):
     summary = model(prompt)[0]['summary_text']
