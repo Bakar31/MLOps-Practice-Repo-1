@@ -15,10 +15,9 @@ jobs:
           fetch-depth: 0
       - name: Add remote
         env:
-          HF: ${{ secrets.HF }}
-        run: git remote add space https://Bakar31:$HF@huggingface.co/spaces/bakar31/MLOps_Practice_Repo_1
+          HF: ${{ secrets.HG }}
+        run: git remote add space https://Bakar31:$HF@huggingface.co/spaces/Bakar31/MLOps_Practice_Repo_1
       - name: Push to hub
         env:
-          HF: ${{ secrets.HF }}
-        run: git push --force https://Bakar31:$HF@huggingface.co/spaces/bakar31/MLOps_Practice_Repo_1
-        
+          HF: ${{ secrets.HG }}
+        run: git push --force https://Bakar31:$HF@huggingface.co/spaces/Bakar31/MLOps_Practice_Repo_1
